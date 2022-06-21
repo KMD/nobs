@@ -1,0 +1,23 @@
+# Models
+
+- Task
+    - id
+    - creator: User
+    - assigned_to: User
+    - prefix
+    - title
+    - description
+    - status: Status
+    - project: Project
+- Comment
+    - id
+    - task_id: Task
+    - cdreator: User
+    - content
+- Status
+    - id
+    - name
+- Project
+    - id
+    - name
+    - statuses: Status[]
